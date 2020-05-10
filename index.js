@@ -36,6 +36,8 @@ app.use('/ariang', express.static(__dirname + '/ariang'))
 app.get('/', (req, res) => {
 	res.send(`
 
+<title>Aria2panel Login</title>
+	<link rel="icon" href="http://www.iconarchive.com/download/i99763/sonya/swarm/Unicorn.ico">
 <link rel="stylesheet" type="text/css" href="https://colorlib.com/etc/lf/Login_v6/vendor/bootstrap/css/bootstrap.min.css">
 
 <link rel="stylesheet" type="text/css" href="https://colorlib.com/etc/lf/Login_v6/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
