@@ -35,10 +35,51 @@ app.use(
 app.use('/ariang', express.static(__dirname + '/ariang'))
 app.get('/', (req, res) => {
 	res.send(`
-<label for="secret">Enter your aria2 secret:</label>
-<input id="secret" type="password">
-<button id="panel">Go to AriaNg panel</button>
-<button id="downloads">View downloaded files</button>
+<link rel="icon" type="image/png" href="https://colorlib.com/etc/lf/Login_v6/images/icons/favicon.ico" />
+
+<link rel="stylesheet" type="text/css" href="https://colorlib.com/etc/lf/Login_v6/vendor/bootstrap/css/bootstrap.min.css">
+
+<link rel="stylesheet" type="text/css" href="https://colorlib.com/etc/lf/Login_v6/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" type="text/css" href="https://colorlib.com/etc/lf/Login_v6/fonts/iconic/css/material-design-iconic-font.min.css">
+
+<link rel="stylesheet" type="text/css" href="https://colorlib.com/etc/lf/Login_v6/vendor/animate/animate.css">
+
+<link rel="stylesheet" type="text/css" href="https://colorlib.com/etc/lf/Login_v6/vendor/css-hamburgers/hamburgers.min.css">
+
+<link rel="stylesheet" type="text/css" href="https://colorlib.com/etc/lf/Login_v6/vendor/animsition/css/animsition.min.css">
+
+<link rel="stylesheet" type="text/css" href="https://colorlib.com/etc/lf/Login_v6/vendor/select2/select2.min.css">
+
+<link rel="stylesheet" type="text/css" href="https://colorlib.com/etc/lf/Login_v6/vendor/daterangepicker/daterangepicker.css">
+
+<link rel="stylesheet" type="text/css" href="https://colorlib.com/etc/lf/Login_v6/css/util.css">
+<link rel="stylesheet" type="text/css" href="https://colorlib.com/etc/lf/Login_v6/css/main.css">
+<body>
+<div class="limiter">
+<div class="container-login100">
+<div class="wrap-login100 p-t-85 p-b-20">
+<form class="login100-form validate-form">
+<span class="login100-form-title p-b-70">
+Welcome to aria2 Panel
+</span>
+<span class="login100-form-avatar">
+<img src="https://colorlib.com/etc/lf/Login_v6/images/avatar-01.jpg" alt="AVATAR">
+</span>
+<div class="wrap-input100 validate-input m-t-85 m-b-35" data-validate="Enter password">
+<input class="input100" type="password" id="secret">
+<span class="focus-input100" data-placeholder="Password"></span>
+</div>
+<button class="login100-form-btn" id="panel">
+Login
+</button>
+<br>
+<button class="login100-form-btn" id="downloads">
+View downloaded files
+</button>
+</div>
+</div>
+</div>
 <script>
 panel.onclick=function(){
 	open('/ariang/#!/settings/rpc/set/wss/'+location.hostname+'/443/jsonrpc/'+btoa(secret.value),'_blank')
