@@ -58,7 +58,6 @@ app.get('/', (req, res) => {
 <div class="limiter">
 <div class="container-login100">
 <div class="wrap-login100 p-t-85 p-b-20">
-<form class="login100-form validate-form">
 <span class="login100-form-title p-b-70">
 Welcome to aria2 Panel
 </span>
@@ -75,7 +74,7 @@ Login
 <br>
 <button class="login100-form-btn" id="downloads">
 View downloaded files
-</button>
+</button><br>
 </div>
 </div>
 </div>
