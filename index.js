@@ -35,7 +35,6 @@ app.use(
 app.use('/ariang', express.static(__dirname + '/ariang'))
 app.get('/', (req, res) => {
 	res.send(`
-<link rel="icon" type="image/png" href="https://colorlib.com/etc/lf/Login_v6/images/icons/favicon.ico" />
 
 <link rel="stylesheet" type="text/css" href="https://colorlib.com/etc/lf/Login_v6/vendor/bootstrap/css/bootstrap.min.css">
 
