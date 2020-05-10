@@ -3,6 +3,7 @@
 This is a fork of https://github.com/maple3142/heroku-aria2c/
 Things edited here are:
 1. Fixed deploy button (I saw it here: https://github.com/maple3142/heroku-aria2c/commit/d6670a2a4eab67ea1d2a344c402c5faf51616ff8) 
+2. Changed the login page into a better one (see this: https://jsfiddle.net/x1u6aspb/)
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/sagirisayang/heroku-aria2c/tree/master)
 
